@@ -1,0 +1,161 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 25px;
+}
+
+button { 
+  display: block;
+}
+
+h1, h3, p, label, button {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+fieldset {
+  background-color: #eaeaea;
+  border-radius: 3px;
+  border: solid #ccc 1px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 40%;
+}
+
+legend {
+  background-color: #FFFFFF;
+  border: solid #ccc 1px;
+  box-shadow: 0 1px 1px 0 #ccc;
+  color: #089dff;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+input[type=button], button, input[type=text], textarea, select {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 3px;
+}
+
+
+input[type=button], button, input[type=text], textarea {
+  border: solid #d0d0d0 1px;
+}
+
+input[type=button], button {
+  background-color: #f0f0f0;
+  padding: 5px;
+}
+
+input[type=button]:hover, button:hover, input[type=text]:hover, textarea:hover {
+  border-color: #909090;
+}
+
+input[type=button]:active, button:active {
+  box-shadow: 0 0 1px 0 black inset;
+}
+
+input[type=button]:disabled, button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+input[type=button]:disabled:hover, button:disabled:hover {
+  border: solid #ccc 1px;
+}
+
+input[type=button]:disabled:active, button:disabled:active {
+  box-shadow: none;
+}
+
+select, input {
+  padding: 0 0.5rem;
+  margin: 0 10px;
+}
+
+
+.lineup {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+}
+
+.crook-loader {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.crook-loader + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.1s;
+    margin: 10px;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: block;
+}
+
+.crook-submit {
+  margin: 10px;
+}
+
+.crook-loader:focus + label,
+.crook-loader + label:hover {
+    color: #089dff;
+}
+
+.preview {
+  width: 150px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.suspect-top {
+  display: flex;
+  justify-content:space-around;
+  background-color: #bbb;
+  padding: 10px 0;
+}
+.suspect-image {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+}
+
+.suspect {
+  margin: 10px;
+}
+
+.critical {
+  color: red;
+}
+
+.suspect-report {
+  height: 50px;
+}
